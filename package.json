@@ -1,6 +1,6 @@
 {
   "name": "ngPlace",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple angular directive for handle Google places autocomplete",
   "main": "ngPlace.js",
   "author": "Thco <perso@thco.fr>",
