@@ -119,6 +119,15 @@
               }
             };
 
+        // Watch enter and update autocomplete before sending
+        element.bind("keydown keypress", function(event) {
+          if(event.which === 13) {
+            scope.$apply(function () {
+              controller.$setViewValue(element.val());
+            });
+          }
+        });
+
         if (scope.gPlace === undefined) {
           scope.gPlace = new google.maps.places.Autocomplete(element[0], {});
         }
