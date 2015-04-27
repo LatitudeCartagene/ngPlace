@@ -148,7 +148,7 @@
           }
 
           // Say our scope we have a result
-          scope.$emit('ngPlace:place_changed', result);
+          scope.$emit('ngPlace:place_changed', result, element);
         });
 
         controller.$render = function () {
